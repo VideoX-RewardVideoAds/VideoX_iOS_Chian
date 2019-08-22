@@ -142,7 +142,7 @@ BOOL isReady = [VXRewardAd isAdReady:@"adUnitID"];
 ##### 代码示例
 
 ```objective-c
-self.interstitialAd = [[VXInterstitialAd alloc] initWithUnitId:self.interTF.text adLoadDelegate:self];
+self.interstitialAd = [[VXInterstitialAd alloc] initWithUnitId:@"adUnitID" adLoadDelegate:self];
 ```
 
 #### 判断广告状态
