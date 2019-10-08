@@ -119,6 +119,26 @@
                                             <segue destination="vU3-j5-x5c" kind="show" id="2Ud-Jo-ae2"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ze0-Ih-pZE" rowHeight="70" style="IBUITableViewCellStyleDefault" id="7ic-aq-zWJ">
+                                        <rect key="frame" x="0.0" y="280" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7ic-aq-zWJ" id="WET-95-xBd">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Splash Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ze0-Ih-pZE">
+                                                    <rect key="frame" x="20" y="0.0" width="356" height="69.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wvq-8K-5Ke" kind="show" id="N1X-z9-u3m"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -357,6 +377,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5P-rT-RAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2128" y="127"/>
+        </scene>
+        <!--Splash Ad-->
+        <scene sceneID="f50-av-Ygq">
+            <objects>
+                <viewController title="Splash Ad" id="wvq-8K-5Ke" customClass="VXSplashAdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOX-nb-Zzu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p9-iz-RVU">
+                                <rect key="frame" x="135" y="800" width="144" height="62"/>
+                                <color key="backgroundColor" red="0.8862745098" green="1" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="Jf2-Pu-nK1"/>
+                                    <constraint firstAttribute="height" constant="62" id="MhX-a7-xk3"/>
+                                </constraints>
+                                <state key="normal" title="Load And Show"/>
+                                <connections>
+                                    <action selector="loadAndShow:" destination="wvq-8K-5Ke" eventType="touchUpInside" id="4M4-Fo-hQk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1p9-iz-RVU" firstAttribute="centerX" secondItem="ifl-8o-gg5" secondAttribute="centerX" id="2Hb-3k-X9S"/>
+                            <constraint firstItem="1p9-iz-RVU" firstAttribute="bottom" secondItem="ifl-8o-gg5" secondAttribute="bottom" id="bNZ-ih-Gyn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ifl-8o-gg5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDm-8y-aQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995.65217391304361" y="270.53571428571428"/>
         </scene>
     </scenes>
 </document>
