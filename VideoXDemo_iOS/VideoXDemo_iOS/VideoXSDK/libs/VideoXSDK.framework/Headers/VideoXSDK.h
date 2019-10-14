@@ -16,6 +16,8 @@
 #import "VXNativeAdLoader.h"
 #import "VXSplashAd.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface VideoXSDK : NSObject
 
 /**
@@ -38,6 +40,10 @@
 
 + (void)sendAfDeepLinkData:(NSDictionary *)data;
 
++ (void)setGDPRConsentStatus:(BOOL)status;
+
++ (void)showConsentInfoTips:(nullable void (^)(BOOL consentStatus, NSError *_Nullable error))callback;
+
 @end
 
-
+NS_ASSUME_NONNULL_END
