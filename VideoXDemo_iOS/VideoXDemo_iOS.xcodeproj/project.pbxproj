@@ -11,6 +11,8 @@
 		D4184F4A230EA6DB00989204 /* VideoXSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4184F45230EA1E900989204 /* VideoXSDK.framework */; };
 		D4184F4B230EA6DB00989204 /* VideoXSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4184F45230EA1E900989204 /* VideoXSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4184F4D230EA72700989204 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4184F4C230EA72700989204 /* BUAdSDK.bundle */; };
+		D47017D523545E130085AE2F /* baidumobadsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D47017D323545E130085AE2F /* baidumobadsdk.bundle */; };
+		D47017D623545E130085AE2F /* AppLovinSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D47017D423545E130085AE2F /* AppLovinSDKResources.bundle */; };
 		D4C7AF73233C80DA00244714 /* VXSplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7AF72233C80DA00244714 /* VXSplashAdViewController.m */; };
 		D4F0393622C9EE5A005F7B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F0393522C9EE5A005F7B77 /* AppDelegate.m */; };
 		D4F0393C22C9EE5A005F7B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F0393A22C9EE5A005F7B77 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		D4184F44230EA1E900989204 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		D4184F45230EA1E900989204 /* VideoXSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VideoXSDK.framework; sourceTree = "<group>"; };
 		D4184F4C230EA72700989204 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BUAdSDK.bundle; sourceTree = "<group>"; };
+		D47017D323545E130085AE2F /* baidumobadsdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = baidumobadsdk.bundle; sourceTree = "<group>"; };
+		D47017D423545E130085AE2F /* AppLovinSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppLovinSDKResources.bundle; sourceTree = "<group>"; };
 		D4C7AF71233C80DA00244714 /* VXSplashAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VXSplashAdViewController.h; sourceTree = "<group>"; };
 		D4C7AF72233C80DA00244714 /* VXSplashAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VXSplashAdViewController.m; sourceTree = "<group>"; };
 		D4F0393122C9EE5A005F7B77 /* VideoXDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoXDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,8 @@
 		D4184F43230EA1E900989204 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				D47017D423545E130085AE2F /* AppLovinSDKResources.bundle */,
+				D47017D323545E130085AE2F /* baidumobadsdk.bundle */,
 				D4184F4C230EA72700989204 /* BUAdSDK.bundle */,
 				D4184F44230EA1E900989204 /* MRAID.bundle */,
 				D4184F45230EA1E900989204 /* VideoXSDK.framework */,
@@ -214,11 +220,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47017D523545E130085AE2F /* baidumobadsdk.bundle in Resources */,
 				D4F0394122C9EE5D005F7B77 /* LaunchScreen.storyboard in Resources */,
 				D4F0393E22C9EE5D005F7B77 /* Assets.xcassets in Resources */,
 				D4184F46230EA1E900989204 /* MRAID.bundle in Resources */,
 				D4F0393C22C9EE5A005F7B77 /* Main.storyboard in Resources */,
 				D4184F4D230EA72700989204 /* BUAdSDK.bundle in Resources */,
+				D47017D623545E130085AE2F /* AppLovinSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
