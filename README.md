@@ -14,9 +14,17 @@
 
 1、拖拽 `libs` 文件到工程中。
 
-2、在 ***target*** -> ***General*** -> ***Embedded Binaries*** 栏目中添加 `VideoXSDK.framework` 文件。
+2、Xcode 版本小于11， 在 ***target*** -> ***General*** -> ***Embedded Binaries*** 栏目中添加 `VideoXSDK.framework` 文件。
 
 ![embedded binarise](https://github.com/VideoX-RewardVideoAds/videoxdemo_iOS/blob/master/images/embedded_binarise.jpg)
+
+ Xcode 11，在***target*** -> ***General*** -> ***Frameworks,Libraries,and Embedded Content*** 栏添加`VideoXSDK.framework`，并选择Embed为 `Embed & Sign`
+
+3、你需要在工程的Info.plist 添加值为布尔值类型`YES`、键为`GADIsAdManagerApp `  的 键值对。
+```
+<key>GADIsAdManagerApp</key>
+<true/>
+```
 
 ## 初始化
 
@@ -136,7 +144,7 @@ BOOL isReady = [VXRewardAd isAdReady:@"adUnitID"];
 [VXRewardAd shareInstance].playDelegate = self;
 ```
 
->为了更好的用户体检，强烈建议在每次需要展示激励视频广告之前，先调用 `+ (void)loadRewardAdWithUnitId:(NSString *)unitId;` 做好视频缓存的准备，避免出现加载等待时间。
+>为了更好的用户体检，建议在每次需要展示激励视频广告前的3～5秒内，先调用 `+ (void)loadRewardAdWithUnitId:(NSString *)unitId;` 做好视频缓存的准备，避免出现加载等待时间。
 >
 
 
