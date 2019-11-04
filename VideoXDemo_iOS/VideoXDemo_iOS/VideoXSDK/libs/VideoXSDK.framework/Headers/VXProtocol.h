@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol VXRewardAdLoadDelegate <NSObject>
 @optional
 - (void)adLoadSuccessWithUnitID:(NSString *)unitID;
-- (void)adLoadFailedUnitID:(NSString *)unitID error:(NSString *)error;
+- (void)adLoadFailedUnitID:(NSString *)unitID error:(NSError *)error;
 
 @end
 

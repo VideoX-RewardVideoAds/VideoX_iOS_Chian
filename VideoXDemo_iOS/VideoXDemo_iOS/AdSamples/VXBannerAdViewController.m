@@ -9,7 +9,7 @@
 #import "VXBannerAdViewController.h"
 
 #import <VideoXSDK/VXBannerAd.h>
-
+            
 @interface VXBannerAdViewController () <VXBannerAdDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *showAdButton;
